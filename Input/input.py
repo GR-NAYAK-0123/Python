@@ -8,6 +8,7 @@
 # a = int(input())
 # b = int(input())
 
+# In this way, we can write the input message
 a = int(input("Enter first real number : "))
 b = int(input("Enter second real number : "))
 
