@@ -1,9 +1,14 @@
 
 # In python input method takes the value from the user as a "String"
 
-a = input()
-b = input()
+# a = input()
+# b = input()
 
-c = a + b
+# Here I type casted those string to int
+# a = int(input())
+# b = int(input())
 
-print("The value of c : ",c)
+a = int(input("Enter first real number : "))
+b = int(input("Enter second real number : "))
+
+print("The addition of two real number is : ",a + b)
