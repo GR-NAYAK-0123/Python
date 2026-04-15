@@ -9,4 +9,5 @@ nums = (1, 4, 6, 8)
 # nums[0] = 2   # We can't change it's element
 
 for i in nums:
-    print(i)
+    print(nums.index(i), nums.count(i))
+   #  print(i)
