@@ -4,11 +4,11 @@ class Queue:
         self.queue = []
     
     # Push
-    def push(self, value):
+    def enqueue(self, value):
         self.queue.append(value)
     
     # Pop
-    def pop(self):
+    def dequeue(self):
         if len(self.queue) == 0:
             return "Queue is empty"
         else:
@@ -33,15 +33,15 @@ class Queue:
     
 
 q1 = Queue()
-q1.push(2)
-q1.push(4)
-q1.push(6)
-q1.push(8)
+q1.enqueue(2)
+q1.enqueue(4)
+q1.enqueue(6)
+q1.enqueue(8)
 q1.show()
 
 print(q1.peek())
 
-q1.pop()
+q1.dequeue()
 
 q1.show()
 
