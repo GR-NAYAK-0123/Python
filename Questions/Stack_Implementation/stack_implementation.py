@@ -27,6 +27,7 @@ class Stack:
             return "Stack is empty"
         return "Stack is not empty"
     
+    #Deleting all the element from the stack
     def deleteAll(self):
         if len(self.stack) == 0:
             return "Stack is already Empty"
