@@ -44,6 +44,7 @@ class LRUCache:
 
         return node.value
     
+    # Putting new Value
     def put(self, key, value):
         if key in self.cache:
             self.remove(self.cache[key])
@@ -57,6 +58,7 @@ class LRUCache:
             self.remove(lru)
             del self.cache[lru.key]
     
+    # Showing the value or printing the value
     def show(self):
         for i in self.cache:
             print(self.cache[i].key,":", self.cache[i].value, end=" -> ")
