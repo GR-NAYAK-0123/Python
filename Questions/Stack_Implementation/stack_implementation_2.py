@@ -12,20 +12,18 @@ class Stack:
     # Pop
     def pop(self):
         if len(self.stack) == 0:
-            return "Stack is empty"
-        self.stack.pop(-1)
+            return None
+        return self.stack.pop()
     
     # Peek
     def peek(self):
         if len(self.stack) == 0:
-            return "Stack is empty"
+            return None
         return self.stack[-1]
     
     # isEmpty
     def is_empty(self):
-        if len(self.stack) == 0:
-            return True
-        return False
+        return len(self.stack) == 0
     
     # Size
     def size(self):
@@ -43,11 +41,13 @@ s1.push(4)
 
 s1.show()
 
-s1.pop()
-s1.pop()
+print(s1.pop())
+print(s1.pop())
 
 s1.show()
 
 print(s1.peek())
+
+print(s1.size())
 
 
