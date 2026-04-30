@@ -1,7 +1,7 @@
 
 
 class Animal:
-    def show(self):
+    def show(self, name):
         print("I am from Animal")
     
     # In python method overloading doesn't work, It simply overriddes the previous method
