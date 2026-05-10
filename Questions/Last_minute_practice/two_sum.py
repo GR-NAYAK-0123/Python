@@ -3,14 +3,15 @@
 
 def two_sum(nums, target):
     d = {}
+    result = [-1, -1]
     for i in range(len(nums)):
         if (target - nums[i]) in d:
-            return [d[target - nums[i]], i]
+            result = [d[target - nums[i]], i]
         else:
             d[nums[i]] = i
-    return [-1, -1]
+    return result
 
-nums = [1, 4, 7, 3, 9]
-target = 10
+nums = [1, 5, 7, 3, 9]
+target = 12
 
 print(two_sum(nums, target))
