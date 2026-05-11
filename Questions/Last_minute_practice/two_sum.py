@@ -1,5 +1,5 @@
 
-# Two sum
+# Two sum problem
 
 def two_sum(nums, target):
     d = {}
