@@ -12,6 +12,7 @@ def get_number():
         try:
             return int(input("Enter the number : "))
         except ValueError:
-            print("You have given something else.....")
+            # print("You have given something else.....")
+            pass
         
 main()
